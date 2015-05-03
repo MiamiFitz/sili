@@ -8,6 +8,7 @@
 
 #import "MainMenuViewController.h"
 #import "MapViewController.h"
+#import "MyGalleriesViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -19,6 +20,13 @@
     
     MapViewController *mapViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"map"];
     [self.navigationController pushViewController:mapViewController animated:YES];
+    
+}
+
+- (IBAction)goToMyGalleries:(id)sender {
+    
+    MyGalleriesViewController *galleriesViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"galleries"];
+    [self.navigationController pushViewController:galleriesViewController animated:YES];
     
 }
 

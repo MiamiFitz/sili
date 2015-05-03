@@ -14,6 +14,11 @@
 
 @implementation GalleryViewController
 
+- (IBAction)back:(id)sender {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

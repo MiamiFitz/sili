@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4535D8C21AF63CC7002B1907 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D8C11AF63CC7002B1907 /* FBSDKMessengerShareKit.framework */; };
+		4535D8C51AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8C41AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png */; };
+		4535D8C71AF6446C002B1907 /* favorite_gallery_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8C61AF6446C002B1907 /* favorite_gallery_view.png */; };
+		4535D8C91AF645BB002B1907 /* SILI_View2_FB_loggin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */; };
+		4535D8CB1AF6463D002B1907 /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8CA1AF6463D002B1907 /* facebook_login.png */; };
+		4535D8CD1AF646FC002B1907 /* SILI_splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */; };
 		45B5CEFF1AF57E04002DBF62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CEFE1AF57E04002DBF62 /* main.m */; };
 		45B5CF021AF57E04002DBF62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CF011AF57E04002DBF62 /* AppDelegate.m */; };
 		45B5CF051AF57E04002DBF62 /* Sili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CF031AF57E04002DBF62 /* Sili.xcdatamodeld */; };
@@ -53,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4535D8C11AF63CC7002B1907 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../../FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		4535D8C41AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = find_a_gallery_and_my_galleries_flatpage.png; sourceTree = "<group>"; };
+		4535D8C61AF6446C002B1907 /* favorite_gallery_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_gallery_view.png; sourceTree = "<group>"; };
+		4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SILI_View2_FB_loggin.png; sourceTree = "<group>"; };
+		4535D8CA1AF6463D002B1907 /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
+		4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SILI_splashscreen.png; sourceTree = "<group>"; };
 		45B5CEF91AF57E04002DBF62 /* Sili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B5CEFD1AF57E04002DBF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45B5CEFE1AF57E04002DBF62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 				45B5D1771AF615FD002DBF62 /* Bolts.framework in Frameworks */,
 				45B5CFA01AF606E1002DBF62 /* QuartzCore.framework in Frameworks */,
 				45B5CF9E1AF606D3002DBF62 /* MobileCoreServices.framework in Frameworks */,
+				4535D8C21AF63CC7002B1907 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				45B5CF9C1AF606CA002DBF62 /* CoreLocation.framework in Frameworks */,
 				45B5D1941AF61DC7002DBF62 /* FBSDKLoginKit.framework in Frameworks */,
 				45B5CF9A1AF606C1002DBF62 /* CoreGraphics.framework in Frameworks */,
@@ -137,6 +150,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4535D8C31AF63DA0002B1907 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */,
+				4535D8CA1AF6463D002B1907 /* facebook_login.png */,
+				4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */,
+				4535D8C61AF6446C002B1907 /* favorite_gallery_view.png */,
+				4535D8C41AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		45B5CEF01AF57E04002DBF62 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +210,7 @@
 		45B5CEFC1AF57E04002DBF62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4535D8C31AF63DA0002B1907 /* Images */,
 				45B5CEFD1AF57E04002DBF62 /* Info.plist */,
 				45B5CEFE1AF57E04002DBF62 /* main.m */,
 			);
@@ -211,6 +237,7 @@
 		45B5CFAB1AF60813002DBF62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4535D8C11AF63CC7002B1907 /* FBSDKMessengerShareKit.framework */,
 				45B5D1951AF6263B002DBF62 /* MapKit.framework */,
 				45B5CFD61AF61484002DBF62 /* parse-library-1.7.2 */,
 				45B5CFA91AF60713002DBF62 /* libsqlite3.dylib */,
@@ -324,8 +351,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4535D8C71AF6446C002B1907 /* favorite_gallery_view.png in Resources */,
+				4535D8C51AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png in Resources */,
+				4535D8CB1AF6463D002B1907 /* facebook_login.png in Resources */,
+				4535D8CD1AF646FC002B1907 /* SILI_splashscreen.png in Resources */,
 				45B5CF0B1AF57E04002DBF62 /* Main.storyboard in Resources */,
 				45B5CF101AF57E05002DBF62 /* LaunchScreen.xib in Resources */,
+				4535D8C91AF645BB002B1907 /* SILI_View2_FB_loggin.png in Resources */,
 				45B5CF0D1AF57E05002DBF62 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +593,7 @@
 				45B5CF211AF57E05002DBF62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45B5CF221AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "SiliTests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +602,7 @@
 				45B5CF241AF57E05002DBF62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

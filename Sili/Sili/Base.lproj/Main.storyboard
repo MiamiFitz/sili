@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1ES-zV-Qha">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -16,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-Xp-zIy">
-                                <rect key="frame" x="229" y="285" width="143" height="30"/>
-                                <state key="normal" title="Login with Facebook">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SILI_View2_FB_loggin.png" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-Yl-Ofa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-Xp-zIy">
+                                <rect key="frame" x="252" y="467" width="98" height="45"/>
+                                <state key="normal" backgroundImage="facebook_login.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,6 +31,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="K1z-Yl-Ofa" secondAttribute="width" id="DiV-zc-iNb"/>
+                            <constraint firstAttribute="centerX" secondItem="NSz-Xp-zIy" secondAttribute="centerX" constant="-1" id="Op5-Jl-qoh"/>
+                            <constraint firstAttribute="height" secondItem="K1z-Yl-Ofa" secondAttribute="height" id="pGM-BF-8sw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9JJ-WP-xU3"/>
                 </viewController>
@@ -75,19 +84,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="find_a_gallery_and_my_galleries_flatpage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3co-sC-hoF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvR-pL-dxg">
-                                <rect key="frame" x="259" y="112" width="82" height="30"/>
-                                <state key="normal" title="Find Gallery">
+                                <rect key="frame" x="0.0" y="-41" width="600" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Hg1-My-Ltd"/>
+                                    <constraint firstAttribute="height" constant="400" id="zm1-Y3-Nj5"/>
+                                </constraints>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goToMapView:" destination="NT4-VN-3ly" eventType="touchUpInside" id="DJq-ai-Lhh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOC-Pi-Mri">
+                                <rect key="frame" x="100" y="400" width="400" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cFf-at-Dfw"/>
+                                    <constraint firstAttribute="width" constant="400" id="jfl-e0-scb"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToMyGalleries:" destination="NT4-VN-3ly" eventType="touchUpInside" id="Rvu-rF-dh7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="cvR-pL-dxg" secondAttribute="centerX" id="6WV-1A-uOd"/>
+                            <constraint firstItem="3co-sC-hoF" firstAttribute="top" secondItem="5YO-Lg-BbQ" secondAttribute="top" id="2CY-OH-hrM"/>
+                            <constraint firstItem="aiB-LO-17w" firstAttribute="top" secondItem="rOC-Pi-Mri" secondAttribute="bottom" id="2rT-DH-8Il"/>
+                            <constraint firstItem="3co-sC-hoF" firstAttribute="width" secondItem="5YO-Lg-BbQ" secondAttribute="width" id="R25-iV-hAU"/>
+                            <constraint firstAttribute="centerX" secondItem="rOC-Pi-Mri" secondAttribute="centerX" id="TUq-YX-ppC"/>
+                            <constraint firstItem="3co-sC-hoF" firstAttribute="leading" secondItem="5YO-Lg-BbQ" secondAttribute="leading" id="Wam-KK-wZE"/>
+                            <constraint firstItem="aiB-LO-17w" firstAttribute="top" secondItem="3co-sC-hoF" secondAttribute="bottom" id="Zdm-ua-bNr"/>
+                            <constraint firstItem="3co-sC-hoF" firstAttribute="height" secondItem="5YO-Lg-BbQ" secondAttribute="height" id="jdO-pj-1KH"/>
+                            <constraint firstAttribute="centerX" secondItem="cvR-pL-dxg" secondAttribute="centerX" id="zDQ-ss-kqH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -98,7 +134,7 @@
         <!--My Galleries View Controller-->
         <scene sceneID="GM3-Jj-Fov">
             <objects>
-                <viewController storyboardIdentifier="mygalleries" id="YsL-Ly-T2J" customClass="MyGalleriesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="galleries" id="YsL-Ly-T2J" customClass="MyGalleriesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lUf-tW-bGG"/>
                         <viewControllerLayoutGuide type="bottom" id="Vsv-IC-Mbd"/>
@@ -106,12 +142,38 @@
                     <view key="view" contentMode="scaleToFill" id="LhF-Gu-jCL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite_gallery_view.png" translatesAutoresizingMaskIntoConstraints="NO" id="fN1-IR-Iea">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-lq-x97">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xl3-Rg-VNS"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="YsL-Ly-T2J" eventType="touchUpInside" id="dH2-7E-paA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fN1-IR-Iea" firstAttribute="top" secondItem="LhF-Gu-jCL" secondAttribute="topMargin" id="0Cl-8X-43Q"/>
+                            <constraint firstItem="8jX-lq-x97" firstAttribute="top" secondItem="LhF-Gu-jCL" secondAttribute="topMargin" id="3t2-YJ-M7v"/>
+                            <constraint firstAttribute="centerX" secondItem="fN1-IR-Iea" secondAttribute="centerX" id="ABq-4n-3VX"/>
+                            <constraint firstItem="fN1-IR-Iea" firstAttribute="width" secondItem="LhF-Gu-jCL" secondAttribute="width" id="Ah0-mU-8Tl"/>
+                            <constraint firstItem="fN1-IR-Iea" firstAttribute="height" secondItem="LhF-Gu-jCL" secondAttribute="height" id="Sf8-ux-XtP"/>
+                            <constraint firstItem="8jX-lq-x97" firstAttribute="width" secondItem="fN1-IR-Iea" secondAttribute="width" id="daM-hW-G60"/>
+                            <constraint firstItem="8jX-lq-x97" firstAttribute="leading" secondItem="LhF-Gu-jCL" secondAttribute="leading" id="hVt-Kf-xe3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wf5-LN-fAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123" y="819"/>
+            <point key="canvasLocation" x="2123" y="820"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="3Pm-0s-WPg">
@@ -134,7 +196,8 @@
         <!--Navigation Controller-->
         <scene sceneID="huP-nK-By8">
             <objects>
-                <navigationController id="1ES-zV-Qha" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="1ES-zV-Qha" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AQa-sz-S4n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -148,4 +211,10 @@
             <point key="canvasLocation" x="-106" y="820"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SILI_View2_FB_loggin.png" width="640" height="1136"/>
+        <image name="facebook_login.png" width="98" height="45"/>
+        <image name="favorite_gallery_view.png" width="640" height="1136"/>
+        <image name="find_a_gallery_and_my_galleries_flatpage.png" width="640" height="1136"/>
+    </resources>
 </document>
