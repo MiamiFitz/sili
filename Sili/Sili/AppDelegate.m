@@ -30,7 +30,67 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    // Register for local notifications in iOS 8+.
+    UIUserNotificationType notificationTypes = UIUserNotificationTypeAlert | UIUserNotificationTypeSound;
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:notificationTypes categories:nil]];
+    
+    // Override point for customization after application launch.
+    NSUUID *beaconUUID = [[NSUUID alloc] initWithUUIDString:@"3C65607D-1FD5-4B7A-9ED9-911C1D38DD97"];
+    NSString *beaconIdentifier = @"Blackdove.com";
+    CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:
+                                    beaconUUID identifier:beaconIdentifier];
+    
+    _locationManager = [[CLLocationManager alloc] init];
+    if([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [_locationManager requestAlwaysAuthorization];
+    }
+    _locationManager.delegate = self;
+    _locationManager.pausesLocationUpdatesAutomatically = NO;
+    [_locationManager startMonitoringForRegion:beaconRegion];
+    [_locationManager startRangingBeaconsInRegion:beaconRegion];
+    [_locationManager startUpdatingLocation];
+    
     return YES;
+}
+
+-(void)sendLocalNotificationWithMessage:(NSString*)message {
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertBody = message;
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
+-(void)locationManager:(CLLocationManager *)manager didRangeBeacons:
+(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
+    NSString *message = @"";
+    
+    if(beacons.count > 0) {
+        CLBeacon *nearestBeacon = beacons.firstObject;
+        switch(nearestBeacon.proximity) {
+            case CLProximityFar:
+                message = @"You are far away from the beacon";
+                break;
+            case CLProximityNear:
+                message = @"You are near the beacon";
+                break;
+            case CLProximityImmediate:
+                message = @"You are in the immediate proximity of the beacon";
+                break;
+            case CLProximityUnknown:
+                return;
+        }
+    } else {
+        message = @"No beacons are nearby";
+    }
+    
+    NSLog(@"%@", message);
+    //[self sendLocalNotificationWithMessage:message];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    // If the application is in the foreground, we will notify the user of the region's state via an alert.
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:notification.alertBody message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
