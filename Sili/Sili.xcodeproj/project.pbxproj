@@ -237,7 +237,6 @@
 		45B5CFAB1AF60813002DBF62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-
 				4535D8C11AF63CC7002B1907 /* FBSDKMessengerShareKit.framework */,
 				EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */,
 				45B5D1951AF6263B002DBF62 /* MapKit.framework */,
@@ -274,9 +273,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		45B5CEF81AF57E04002DBF62 /* Sili */ = {
+		45B5CEF81AF57E04002DBF62 /* SeeItLikeIt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45B5CF1F1AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "Sili" */;
+			buildConfigurationList = 45B5CF1F1AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "SeeItLikeIt" */;
 			buildPhases = (
 				45B5CEF51AF57E04002DBF62 /* Sources */,
 				45B5CEF61AF57E04002DBF62 /* Frameworks */,
@@ -286,7 +285,7 @@
 			);
 			dependencies = (
 			);
-			name = Sili;
+			name = SeeItLikeIt;
 			productName = Sili;
 			productReference = 45B5CEF91AF57E04002DBF62 /* Sili.app */;
 			productType = "com.apple.product-type.application";
@@ -349,7 +348,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45B5CEF81AF57E04002DBF62 /* Sili */,
+				45B5CEF81AF57E04002DBF62 /* SeeItLikeIt */,
 				45B5CF141AF57E05002DBF62 /* SiliTests */,
 			);
 		};
@@ -410,7 +409,7 @@
 /* Begin PBXTargetDependency section */
 		45B5CF171AF57E05002DBF62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45B5CEF81AF57E04002DBF62 /* Sili */;
+			target = 45B5CEF81AF57E04002DBF62 /* SeeItLikeIt */;
 			targetProxy = 45B5CF161AF57E05002DBF62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -597,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45B5CF1F1AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "Sili" */ = {
+		45B5CF1F1AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "SeeItLikeIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45B5CF201AF57E05002DBF62 /* Debug */,
