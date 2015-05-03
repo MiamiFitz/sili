@@ -55,22 +55,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZiK-lf-Nlr">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <outlet property="delegate" destination="WYz-aw-10X" id="rWR-Tn-bpb"/>
-                                </connections>
-                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51N-vK-xL1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="178"/>
+                                <state key="normal" image="map_top.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="51N-vK-xL1" firstAttribute="trailing" secondItem="wEF-ZW-rWg" secondAttribute="trailingMargin" constant="16" id="dEp-3j-c2m"/>
+                            <constraint firstItem="51N-vK-xL1" firstAttribute="leading" secondItem="wEF-ZW-rWg" secondAttribute="leadingMargin" constant="-16" id="fZQ-ON-a2a"/>
+                            <constraint firstItem="51N-vK-xL1" firstAttribute="top" secondItem="wEF-ZW-rWg" secondAttribute="topMargin" id="qQI-ry-nsl"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="theMapView" destination="ZiK-lf-Nlr" id="Xia-6t-nej"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNf-N2-bvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123" y="39"/>
+            <point key="canvasLocation" x="2123" y="21"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="M2h-EJ-s6Y">
@@ -216,5 +218,6 @@
         <image name="facebook_login.png" width="98" height="45"/>
         <image name="favorite_gallery_view.png" width="640" height="1136"/>
         <image name="find_a_gallery_and_my_galleries_flatpage.png" width="640" height="1136"/>
+        <image name="map_top.png" width="640" height="178"/>
     </resources>
 </document>

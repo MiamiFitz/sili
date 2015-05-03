@@ -13,6 +13,7 @@
 		4535D8C91AF645BB002B1907 /* SILI_View2_FB_loggin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */; };
 		4535D8CB1AF6463D002B1907 /* facebook_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8CA1AF6463D002B1907 /* facebook_login.png */; };
 		4535D8CD1AF646FC002B1907 /* SILI_splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */; };
+		4535D8CF1AF66392002B1907 /* map_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 4535D8CE1AF66392002B1907 /* map_top.png */; };
 		45B5CEFF1AF57E04002DBF62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CEFE1AF57E04002DBF62 /* main.m */; };
 		45B5CF021AF57E04002DBF62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CF011AF57E04002DBF62 /* AppDelegate.m */; };
 		45B5CF051AF57E04002DBF62 /* Sili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45B5CF031AF57E04002DBF62 /* Sili.xcdatamodeld */; };
@@ -65,6 +66,7 @@
 		4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SILI_View2_FB_loggin.png; sourceTree = "<group>"; };
 		4535D8CA1AF6463D002B1907 /* facebook_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_login.png; sourceTree = "<group>"; };
 		4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SILI_splashscreen.png; sourceTree = "<group>"; };
+		4535D8CE1AF66392002B1907 /* map_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_top.png; sourceTree = "<group>"; };
 		45B5CEF91AF57E04002DBF62 /* Sili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B5CEFD1AF57E04002DBF62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45B5CEFE1AF57E04002DBF62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		4535D8C31AF63DA0002B1907 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4535D8CE1AF66392002B1907 /* map_top.png */,
 				4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */,
 				4535D8CA1AF6463D002B1907 /* facebook_login.png */,
 				4535D8C81AF645BB002B1907 /* SILI_View2_FB_loggin.png */,
@@ -367,6 +370,7 @@
 				45B5CF101AF57E05002DBF62 /* LaunchScreen.xib in Resources */,
 				4535D8C91AF645BB002B1907 /* SILI_View2_FB_loggin.png in Resources */,
 				45B5CF0D1AF57E05002DBF62 /* Images.xcassets in Resources */,
+				4535D8CF1AF66392002B1907 /* map_top.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
