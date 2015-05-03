@@ -26,7 +26,6 @@
 		45B5CF9E1AF606D3002DBF62 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CF9D1AF606D3002DBF62 /* MobileCoreServices.framework */; };
 		45B5CFA01AF606E1002DBF62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CF9F1AF606E1002DBF62 /* QuartzCore.framework */; };
 		45B5CFA21AF606EC002DBF62 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CFA11AF606EC002DBF62 /* Security.framework */; };
-		45B5CFA41AF606F1002DBF62 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CFA31AF606F1002DBF62 /* StoreKit.framework */; };
 		45B5CFA61AF606FF002DBF62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CFA51AF606FF002DBF62 /* SystemConfiguration.framework */; };
 		45B5CFA81AF60708002DBF62 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CFA71AF60708002DBF62 /* libz.dylib */; };
 		45B5CFAA1AF60713002DBF62 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5CFA91AF60713002DBF62 /* libsqlite3.dylib */; };
@@ -40,6 +39,7 @@
 		45B5D1941AF61DC7002DBF62 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5D1921AF61DC7002DBF62 /* FBSDKLoginKit.framework */; };
 		45B5D1961AF6263B002DBF62 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5D1951AF6263B002DBF62 /* MapKit.framework */; };
 		45B5D1991AF62785002DBF62 /* SiliAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5D1981AF62785002DBF62 /* SiliAnnotation.m */; };
+		EFECCAA81AF63D1200893454 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,6 @@
 		45B5CF9D1AF606D3002DBF62 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		45B5CF9F1AF606E1002DBF62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		45B5CFA11AF606EC002DBF62 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		45B5CFA31AF606F1002DBF62 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		45B5CFA51AF606FF002DBF62 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		45B5CFA71AF60708002DBF62 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		45B5CFA91AF60713002DBF62 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -97,6 +96,7 @@
 		45B5D1951AF6263B002DBF62 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45B5D1971AF62785002DBF62 /* SiliAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiliAnnotation.h; sourceTree = SOURCE_ROOT; };
 		45B5D1981AF62785002DBF62 /* SiliAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiliAnnotation.m; sourceTree = SOURCE_ROOT; };
+		EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				45B5CFAA1AF60713002DBF62 /* libsqlite3.dylib in Frameworks */,
 				45B5CFA81AF60708002DBF62 /* libz.dylib in Frameworks */,
 				45B5CFA61AF606FF002DBF62 /* SystemConfiguration.framework in Frameworks */,
-				45B5CFA41AF606F1002DBF62 /* StoreKit.framework in Frameworks */,
 				45B5CFDF1AF61484002DBF62 /* ParseCrashReporting.framework in Frameworks */,
+				EFECCAA81AF63D1200893454 /* FBSDKCoreKit.framework in Frameworks */,
 				45B5CFA21AF606EC002DBF62 /* Security.framework in Frameworks */,
 				45B5CFDE1AF61484002DBF62 /* Parse.framework in Frameworks */,
 				45B5D1931AF61DC7002DBF62 /* FBSDKCoreKit.framework in Frameworks */,
@@ -211,12 +211,12 @@
 		45B5CFAB1AF60813002DBF62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */,
 				45B5D1951AF6263B002DBF62 /* MapKit.framework */,
 				45B5CFD61AF61484002DBF62 /* parse-library-1.7.2 */,
 				45B5CFA91AF60713002DBF62 /* libsqlite3.dylib */,
 				45B5CFA71AF60708002DBF62 /* libz.dylib */,
 				45B5CFA51AF606FF002DBF62 /* SystemConfiguration.framework */,
-				45B5CFA31AF606F1002DBF62 /* StoreKit.framework */,
 				45B5CFA11AF606EC002DBF62 /* Security.framework */,
 				45B5CF9F1AF606E1002DBF62 /* QuartzCore.framework */,
 				45B5CF9D1AF606D3002DBF62 /* MobileCoreServices.framework */,
@@ -293,6 +293,14 @@
 					45B5CEF81AF57E04002DBF62 = {
 						CreatedOnToolsVersion = 6.3;
 						DevelopmentTeam = Q338UYGFZ8;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					45B5CF141AF57E05002DBF62 = {
 						CreatedOnToolsVersion = 6.3;
@@ -483,6 +491,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.7.2",
 					/Users/bpolania/Documents/FacebookSDK,
+					/Users/grundyoso/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Sili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +509,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.7.2",
 					/Users/bpolania/Documents/FacebookSDK,
+					/Users/grundyoso/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Sili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -561,6 +571,7 @@
 				45B5CF211AF57E05002DBF62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45B5CF221AF57E05002DBF62 /* Build configuration list for PBXNativeTarget "SiliTests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +580,7 @@
 				45B5CF241AF57E05002DBF62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
