@@ -7,6 +7,7 @@
 //
 
 #import "MapViewController.h"
+#import "GalleryViewController.h"
 
 @interface MapViewController ()
 
@@ -96,6 +97,27 @@
                                            cancelButtonTitle:@"OK"
                                            otherButtonTitles: @"Cancel",nil];
     [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"Button Index =%ld",buttonIndex);
+    if (buttonIndex == 0)
+    {
+        [self goToGallery];
+        NSLog(@"You have clicked Cancel");
+    }
+    else if(buttonIndex == 1)
+    {
+        NSLog(@"You have clicked GOO");
+    }
+}
+
+- (void)goToGallery {
+    
+    GalleryViewController *galleryViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"gallery"];
+    [self.navigationController pushViewController:galleryViewController animated:YES];
+    
 }
 
 /*
