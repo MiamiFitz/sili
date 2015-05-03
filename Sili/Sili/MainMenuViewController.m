@@ -19,7 +19,7 @@
 - (IBAction)goToMapView:(id)sender {
     
     MapViewController *mapViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"map"];
-    //[self.navigationController pushViewController:mapViewController animated:YES];
+    [self.navigationController pushViewController:mapViewController animated:YES];
     
 }
 
