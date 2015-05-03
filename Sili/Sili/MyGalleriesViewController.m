@@ -14,6 +14,7 @@
 
 @implementation MyGalleriesViewController
 
+
 - (IBAction)back:(id)sender {
     
     [self.navigationController popViewControllerAnimated:YES];
@@ -22,6 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //UIButton *button = [FBSDKMessengerShareButton rectangularButtonWithStyle:FBSDKMessengerShareButtonStyleBlue];
+    //[button addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
+    //[self.view addSubview:button];
     // Do any additional setup after loading the view.
 }
 

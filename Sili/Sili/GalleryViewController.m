@@ -7,12 +7,24 @@
 //
 
 #import "GalleryViewController.h"
+#import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
 
 @interface GalleryViewController ()
 
 @end
 
 @implementation GalleryViewController
+
+- (IBAction)sendMessage:(id)sender {
+    
+    
+    if ([FBSDKMessengerSharer messengerPlatformCapabilities] & FBSDKMessengerPlatformCapabilityImage) {
+        UIImage *image = [UIImage imageNamed:@"elephant.jpg"];
+        
+        [FBSDKMessengerSharer shareImage:image withOptions:nil];
+    }
+    
+}
 
 - (IBAction)back:(id)sender {
     

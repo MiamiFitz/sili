@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45B5CEF81AF57E04002DBF62"
-               BuildableName = "Sili.app"
-               BlueprintName = "Sili"
+               BuildableName = "SeeItLikeIt.app"
+               BlueprintName = "SeeItLikeIt"
                ReferencedContainer = "container:Sili.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45B5CEF81AF57E04002DBF62"
-            BuildableName = "Sili.app"
-            BlueprintName = "Sili"
+            BuildableName = "SeeItLikeIt.app"
+            BlueprintName = "SeeItLikeIt"
             ReferencedContainer = "container:Sili.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45B5CEF81AF57E04002DBF62"
-            BuildableName = "Sili.app"
-            BlueprintName = "Sili"
+            BuildableName = "SeeItLikeIt.app"
+            BlueprintName = "SeeItLikeIt"
             ReferencedContainer = "container:Sili.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45B5CEF81AF57E04002DBF62"
-            BuildableName = "Sili.app"
-            BlueprintName = "Sili"
+            BuildableName = "SeeItLikeIt.app"
+            BlueprintName = "SeeItLikeIt"
             ReferencedContainer = "container:Sili.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
