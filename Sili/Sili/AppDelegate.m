@@ -13,11 +13,15 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    BOOL _inOutToggle;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _inOutToggle = YES;
     
     [Parse enableLocalDatastore];
     
@@ -66,24 +70,26 @@
     if(beacons.count > 0) {
         CLBeacon *nearestBeacon = beacons.firstObject;
         switch(nearestBeacon.proximity) {
-            case CLProximityFar:
-                message = @"You are far away from the beacon";
-                break;
             case CLProximityNear:
-                message = @"You are near the beacon";
-                break;
             case CLProximityImmediate:
-                message = @"You are in the immediate proximity of the beacon";
+                message = @"We found something interesting. Share it!!";
+                if (_inOutToggle) {
+                    [self sendLocalNotificationWithMessage:message];
+                    _inOutToggle=NO;
+                }
                 break;
+            case CLProximityFar:
+                message = @"Beacons are too far";
+                if (!_inOutToggle) _inOutToggle=YES;
+                return;
             case CLProximityUnknown:
                 return;
         }
     } else {
-        message = @"No beacons are nearby";
+        message = @"No beacons detected";
+        if (!_inOutToggle) _inOutToggle=YES;
     }
-    
     NSLog(@"%@", message);
-    //[self sendLocalNotificationWithMessage:message];
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
