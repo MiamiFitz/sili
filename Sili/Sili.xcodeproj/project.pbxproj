@@ -48,6 +48,7 @@
 		45B5D1961AF6263B002DBF62 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B5D1951AF6263B002DBF62 /* MapKit.framework */; };
 		45B5D1991AF62785002DBF62 /* SiliAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B5D1981AF62785002DBF62 /* SiliAnnotation.m */; };
 		EFECCAA81AF63D1200893454 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */; };
+		EFECCAAA1AF67D5100893454 /* messangericon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFECCAA91AF67D5100893454 /* messangericon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		45B5D1971AF62785002DBF62 /* SiliAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiliAnnotation.h; sourceTree = SOURCE_ROOT; };
 		45B5D1981AF62785002DBF62 /* SiliAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiliAnnotation.m; sourceTree = SOURCE_ROOT; };
 		EFECCAA71AF63D1200893454 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		EFECCAA91AF67D5100893454 /* messangericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messangericon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		4535D8C31AF63DA0002B1907 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EFECCAA91AF67D5100893454 /* messangericon.png */,
 				4535D8D01AF66C42002B1907 /* elephant.jpg */,
 				4535D8CE1AF66392002B1907 /* map_top.png */,
 				4535D8CC1AF646FC002B1907 /* SILI_splashscreen.png */,
@@ -367,6 +370,7 @@
 			files = (
 				4535D8C71AF6446C002B1907 /* favorite_gallery_view.png in Resources */,
 				4535D8C51AF63DD1002B1907 /* find_a_gallery_and_my_galleries_flatpage.png in Resources */,
+				EFECCAAA1AF67D5100893454 /* messangericon.png in Resources */,
 				4535D8CB1AF6463D002B1907 /* facebook_login.png in Resources */,
 				4535D8CD1AF646FC002B1907 /* SILI_splashscreen.png in Resources */,
 				45B5CF0B1AF57E04002DBF62 /* Main.storyboard in Resources */,

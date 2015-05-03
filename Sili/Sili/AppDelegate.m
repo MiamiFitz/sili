@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
 
 @interface AppDelegate ()
 
@@ -97,6 +98,16 @@
     // If the application is in the foreground, we will notify the user of the region's state via an alert.
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:notification.alertBody message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:@"Share", nil];
     [alert show];
+}
+
+- (void)sendMessage {
+    
+    if ([FBSDKMessengerSharer messengerPlatformCapabilities] & FBSDKMessengerPlatformCapabilityImage) {
+        UIImage *image = [UIImage imageNamed:@"elephant.jpg"];
+        
+        [FBSDKMessengerSharer shareImage:image withOptions:nil];
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
